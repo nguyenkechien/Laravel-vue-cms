@@ -17,19 +17,19 @@ class UserTableSeed extends Seeder
         $now = new DateTime;
         $users = [
           [
-            'name' => 'webadmin1',
-            'email' => 'webadmin1@gmail.com',
-            'password' => Hash::make('Webadmin@111xyz&!'),
+            'name' => 'admin1',
+            'email' => 'admin1@gmail.com',
+            'password' => Hash::make('admin@111xyz&!'),
           ],
           [
-            'name' => 'webadmin2',
-            'email' => 'webadmin2@gmail.com',
-            'password' => Hash::make('Webadmin@222xyz&!'),
+            'name' => 'admin2',
+            'email' => 'admin2@gmail.com',
+            'password' => Hash::make('admin@222xyz&!'),
           ],
           [
-            'name' => 'webadmin3',
-            'email' => 'webadmin3@gmail.com',
-            'password' => Hash::make('Webadmin@333xyz&!'),
+            'name' => 'admin3',
+            'email' => 'admin3@gmail.com',
+            'password' => Hash::make('admin@333xyz&!'),
           ],
         ];
 
