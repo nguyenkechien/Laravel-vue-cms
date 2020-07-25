@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: $black-100;
+    font-weight: normal;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+
+    // li {
+    //   list-style-type: none;
+    // }
+  }
+
+  button {
+
+    &:focus,
+    &:active {
+      border: 0;
+      outline: none;
+    }
+  }
+
+  // blockquote {
+  //   background: #f9f9f9;
+  //   border-left: 10px solid #ccc;
+  //   margin: 0em 10px;
+  //   padding: 0.5em 10px;
+  //   quotes: "\201C""\201D""\2018""\2019";
+  // }
+
+  // blockquote:before {
+  //   color: #ccc;
+  //   content: open-quote;
+  //   font-size: 4em;
+  //   line-height: 0.1em;
+  //   margin-right: 0.25em;
+  //   vertical-align: -0.4em;
+  // }
+
+  // blockquote p {
+  //   display: inline;
+  // }
+}

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{Og19:function(e,n,t){"use strict";t.r(n);var r={name:"DashboardCoreView"},o=t("KHd+"),a=Object(o.a)(r,(function(){var e=this.$createElement,n=this._self._c||e;return n("v-content",[n("router-view")],1)}),[],!1,null,null,null);n.default=a.exports}}]);
+//# sourceMappingURL=18.js.map

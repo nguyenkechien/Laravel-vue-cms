@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{B0II:function(n,t,e){"use strict";e.r(t);var o={mounted:function(){var n=$("#logout-form"),t=$('[name="x-token"]');n.append('<input name="token" value="'.concat(t.attr("content"),'">')),n.submit()}},u=e("KHd+"),a=Object(u.a)(o,(function(){var n=this.$createElement;return(this._self._c||n)("div")}),[],!1,null,null,null);t.default=a.exports}}]);
+//# sourceMappingURL=15.js.map

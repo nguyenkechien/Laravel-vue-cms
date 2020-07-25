@@ -1,0 +1,20 @@
+.titlebar {
+  background-color: #f5f5f5;
+  &-title {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+  }
+
+  &-level{
+    &-item{
+      text-transform: capitalize;
+      &-current{
+        text-transform: none;
+        font-weight: bold;
+      }
+    }
+  }
+}

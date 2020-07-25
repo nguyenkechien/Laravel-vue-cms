@@ -1,0 +1,201 @@
+#sidebar {
+  .recent-posts {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--pb {
+      padding-bottom: 45px;
+    }
+
+    .wrap-recent-posts {
+      width: 100%;
+      position: relative;
+
+      @media (max-width: 1100px) {
+        order: 1;
+      }
+    }
+
+    &-advertise {
+      @media (max-width: 1100px) {
+        order: 2;
+      }
+
+      img {
+        margin: 0 0 1.5em;
+      }
+    }
+
+    &-search {
+      width: 100%;
+
+      @media (max-width: 1100px) {
+        order: 3;
+      }
+    }
+
+    &-title {
+      color: #505050;
+      font-size: 20px;
+      margin-bottom: 25px;
+      font-weight: 700;
+      padding: 0;
+      line-height: normal;
+    }
+
+    &-widgets {
+      position: relative;
+
+      &:last-child {
+        .recent-posts-widgets-item {
+          border-bottom: 0px solid #e3e3e3;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      &-item {
+        border-bottom: 1px solid #e3e3e3;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        position: relative;
+
+        &-thumb {
+          width: 76px;
+          height: 76px;
+          border-radius: 100px;
+          position: absolute;
+          left: 0;
+          top: 0;
+
+          .ratio {
+            border-radius: 100px;
+            overflow: hidden;
+            z-index: 0;
+            position: relative;
+
+            &-container {
+              &-square {
+                padding-bottom: 100%;
+              }
+            }
+
+            &-content {
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              background-size: cover;
+              background-position: 50% 50%;
+            }
+          }
+
+          .mini {
+            &-overlay {
+              &-container {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background-color: rgba(71, 201, 229, .75);
+                text-align: center;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  opacity: 1;
+                }
+
+                i {
+                  line-height: 1px;
+                  font-size: 24px;
+                  color: #fff !important;
+                  display: block;
+                }
+              }
+            }
+
+            &-view {
+              position: absolute;
+              top: 2px;
+              right: 2px;
+              color: #fff;
+              padding: 10px;
+              background-color: #47c9e5;
+              padding: 2px 6px;
+              line-height: 1;
+              font-weight: 700;
+              border-radius: 20px;
+              font-size: 13px;
+              z-index: 500;
+              box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, .2);
+            }
+          }
+
+        }
+
+        &-content {
+          padding-left: 95px;
+          min-height: 76px;
+
+          .post-meta {
+            &-categories {
+              a {
+                color: #8d8d8d;
+                font-size: 12px;
+                text-transform: uppercase;
+              }
+            }
+
+            &-title {
+              padding-top: 2px;
+              font-size: 16px;
+              margin-top: 0;
+              margin-bottom: 8px;
+              color: #3f3f3f;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+
+    &-tags {
+
+    }
+
+    &-tag {
+      text-transform: uppercase;
+      border-width: 0;
+      box-shadow: none;
+      border-radius: 6px;
+      padding: 0 12px;
+      line-height: 32px;
+      background-color: #f0f0f0;
+      transition: .3s all ease-in-out;
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+      font-size: 13px;
+      margin-bottom: 12px;
+      border: 3px solid #fff;
+      font-weight: 700;
+      &:hover{
+        background-color: #47c9e5;
+        color: #fff;
+      }
+      &.active{
+        background-color: #60d8f3;
+        color: #fff;
+      }
+    }
+  }
+}

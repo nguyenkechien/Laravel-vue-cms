@@ -1,0 +1,46 @@
+{
+    "private": true,
+    "scripts": {
+        "apache": "C:/xampp/xampp_start.exe",
+        "serve": "php artisan serve",
+        "server": "concurrently --kill-others-on-fail \"npm run apache\" \"npm run serve\"",
+        "dev": "concurrently --kill-others-on-fail \"npm run development-js\" \"npm run development-css\"",
+        "development-js": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --watch --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.js.mix",
+        "development-css": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --watch --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.css.mix",
+        "prod": "concurrently --kill-others-on-fail \"npm run production-js\" \"npm run production-css\"",
+        "production-js": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.js.mix",
+        "production-css": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.mixfile=webpack.css.mix",
+        "watch": "concurrently --kill-others-on-fail \"npm run development-js -- --watch\" \"npm run development-css -- --watch\"",
+        "watch-poll": "npm run watch -- --watch-poll"
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "bootstrap": "^4.0.0",
+        "concurrently": "^5.2.0",
+        "cross-env": "^7.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^5.0.1",
+        "laravel-mix-merge-manifest": "^0.1.2",
+        "lodash": "^4.17.13",
+        "popper.js": "^1.12",
+        "quill-image-extend-module": "^1.1.2",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.20.1",
+        "sass-loader": "^8.0.0",
+        "vue": "^2.5.17",
+        "vue-template-compiler": "^2.6.10",
+        "webpack-livereload-plugin": "^2.3.0"
+    },
+    "dependencies": {
+        "chart.js": "^2.9.3",
+        "node-sass": "^4.14.1",
+        "quill-image-drop-module": "^1.0.3",
+        "quill-image-resize-module": "^3.0.0",
+        "vue-chartjs": "^3.5.0",
+        "vue-quill-editor": "^3.0.6",
+        "vue-router": "^3.3.2",
+        "vue2-editor": "^2.10.2",
+        "vuetify": "^2.2.30",
+        "vuex": "^3.4.0"
+    }
+}

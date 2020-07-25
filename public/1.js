@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{"4ePw":function(e,n,t){"use strict";t.r(n);var l={name:"Tables"},r=t("KHd+"),s=Object(r.a)(l,(function(){var e=this.$createElement;return(this._self._c||e)("router-view")}),[],!1,null,null,null);n.default=s.exports}}]);
+//# sourceMappingURL=1.js.map

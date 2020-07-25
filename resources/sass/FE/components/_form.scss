@@ -1,0 +1,51 @@
+.form {
+  position: relative;
+  display: block;
+
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  &-field {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    font-weight: 400;
+    transition: .25s background;
+    border: 1px solid #ddd;
+    color: #8d8d8d;
+    border-width: 0;
+    box-shadow: 0px 15px 45px -9px rgba(0, 0, 0, .2);
+    padding: 16px 74px 16px 26px;
+    transition: .3s all ease-in-out;
+    border-radius: 5px !important;
+    outline: none;
+
+    &:focus {
+      box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .06);
+      background-color: #fff;
+    }
+  }
+
+  &-btn {
+    &-submit {
+      position: absolute;
+      display: block;
+      top: 50%;
+      border: none;
+      text-align: center;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      right: 0;
+      margin-top: -30px;
+      width: 55px;
+      height: 54.5px;
+      background-color: #f0f0f0;
+    }
+  }
+}

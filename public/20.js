@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{xQtk:function(t,n,e){"use strict";e.r(n);var i={name:"Notifications",data:function(){return{isLoading:!0}}},r=e("KHd+"),s=Object(r.a)(i,(function(){var t=this.$createElement,n=this._self._c||t;return n("div",[this.isLoading?n("v-progress-linear",{attrs:{color:"light-blue lighten-2",indeterminate:"",rounded:"",height:"4"}}):this._e()],1)}),[],!1,null,null,null);n.default=s.exports}}]);
+//# sourceMappingURL=20.js.map
